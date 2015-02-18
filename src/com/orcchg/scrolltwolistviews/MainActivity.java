@@ -125,7 +125,7 @@ public class MainActivity extends Activity {
       public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount,
           int totalItemCount) {
         if (view == clickSource)
-          listView.setSelectionFromTop(firstVisibleItem, view.getChildAt(0).getTop() + offset);
+          listView.setSelectionFromTop(firstVisibleItem, view.getChildAt(0).getTop() - offset);
       }
 
       @Override
